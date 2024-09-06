@@ -1,7 +1,13 @@
-// se realiza la importacion del COMPONENTE TITULO.TSX
-import Titulo from "./Titulo";
+import Card, { CardBody } from "./components/Card";
+import List from "./components/List";
+
 function App() {
-  //JSX
-  return <Titulo />; // se trae al componente titulo llamandolo con <Titulo/>
+  const list = ["goku", "tanjiro", "eren"];
+  return (
+    <Card>
+      <CardBody title={"Hola mundo"} />
+      <List data={list} />
+    </Card>
+  );
 }
 export default App;
